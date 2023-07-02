@@ -3,34 +3,34 @@
 # Определите минимальное число монеток, которые нужно перевернуть, чтобы все монетки были повернуты вверх одной и той же стороной. 
 # Выведите минимальное количество монет, которые нужно перевернуть
 
-# coins = input("Input coins: ")
-# up ='1'
+coins = input("Input coins: ")
+up ='1'
 
-# upcount = 0
-# downcount = 0
+upcount = 0
+downcount = 0
 
-# for i in coins:
-#     if i == up:
-#         upcount +=1
-#     else:
-#         downcount +=1
-# if upcount > downcount:
-#     print(f'count of coins: {downcount}')
-# elif downcount > upcount:
-#     print(f'count of coins: {upcount}')
-# else:
-#     print(f'count of coins: {downcount}') 
+for i in coins:
+    if i == up:
+        upcount +=1
+    else:
+        downcount +=1
+if upcount > downcount:
+    print(f'count of coins: {downcount}')
+elif downcount > upcount:
+    print(f'count of coins: {upcount}')
+else:
+    print(f'count of coins: {downcount}') 
 
 #############################Task 12########################
 # Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. 
 # Петя помогает Кате по математике. Он задумывает два натуральных числа X и Y (X,Y≤1000), а Катя должна их отгадать. 
 # Для этого Петя делает две подсказки. Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать задуманные Петей числа.
 
-# s = int (input("Enter Number s: "))
-# p = int (input("Enter Number p: "))
-# x = (s-int((s**2-4*p)**0.5))//2
-# y = (s+int((s**2-4*p)**0.5))//2
-# print(f'Number X is {x}, Number Y is {y}')
+s = int (input("Enter Number s: "))
+p = int (input("Enter Number p: "))
+x = (s-int((s**2-4*p)**0.5))//2
+y = (s+int((s**2-4*p)**0.5))//2
+print(f'Number X is {x}, Number Y is {y}')
 
 ###############################Task################
 
